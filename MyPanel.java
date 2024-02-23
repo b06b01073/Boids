@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class MyPanel extends JPanel implements ActionListener{
     private final int UPDATE_INTERVAL = 20;
-    private final int flockSize = 500;
+    private final int flockSize = 200;
 
     private BoidFlock boidFlock = new BoidFlock(flockSize, 0, 0, 800,  600);;
     
