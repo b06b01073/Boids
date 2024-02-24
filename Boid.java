@@ -70,6 +70,7 @@ public class Boid {
         for(Boid boid: flock) {
             if(canDetect(boid, this.separateRange)) {
                 Vector2d diff = Vector2d.sub(this.position, boid.position);
+                diff = Vector2d.div(diff, Vector2d.getLength(diff));
                 steering = Vector2d.add(steering, diff);
             }
         }

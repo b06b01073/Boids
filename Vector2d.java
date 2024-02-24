@@ -38,12 +38,21 @@ public class Vector2d {
     }
     
 
-    // return the length of vector
+    // return the length of vector from vec1 to vec2
     public static double getLength(Vector2d vec1, Vector2d vec2) {
         double dx = vec1.getX() - vec2.getX();
         double dy = vec1.getY() - vec2.getY();
         
         return Math.sqrt(dx * dx + dy * dy);
+    }
+
+
+    // return length of `vec`
+    public static double getLength(Vector2d vec) {
+        double x = vec.getX();
+        double y = vec.getY();
+
+        return Math.sqrt(x * x + y * y);
     }
 
     

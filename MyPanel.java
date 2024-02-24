@@ -4,9 +4,9 @@ import java.awt.*;
 
 public class MyPanel extends JPanel implements ActionListener{
     private final int UPDATE_INTERVAL = 20;
-    private final int flockSize = 200;
+    private final int FLOCK_SIZE = 100;
 
-    private BoidFlock boidFlock = new BoidFlock(flockSize, 0, 0, 800,  600);;
+    private BoidFlock boidFlock = new BoidFlock(FLOCK_SIZE, 0, 0, 800,  600);;
     
     private Color bgColor = Color.darkGray;
     private Color boidColor = Color.CYAN;
